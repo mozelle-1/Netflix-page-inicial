@@ -1,0 +1,105 @@
+:root {
+  /*comandos para todo site (não ficar repetindo)*/
+  --vermelho: #d81f26;
+  --preto: #141414;
+}
+
+* {
+  /*configurações padrões*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*deixa as coisas dentro da caixa*/
+}
+
+body {
+  background: var(--preto); /* fundo do site*/
+  font-family: "Times New Roman", Times, serif; /*fonte padrão*/
+  color: white;
+}
+
+header .container {
+  display: flex; /*alinha na box*/
+  flex-direction: row; /**/
+  align-items: center; /*alinhar itens para o centro*/
+  justify-content: space-between; /*coloca o texto 1 e 2 em extremidades opostas*/
+}
+
+header .logo {
+  margin-left: 5px; /*desgruda do canto*/
+  color: var(--vermelho);
+  font-family: "arial black";
+  font-size: 40px; /*tamanho da fonte*/
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none; /*tirou as linhas de link*/
+  margin-right: 10px; /*espaçamento entre os "a href"*/
+}
+
+header nav a:hover {
+  /*hover: evento de passar o mouse por cima*/
+  color: aliceblue;
+}
+
+.serieprincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-image: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50), rgb(24, 21, 23)), url(/img/capanetflix.png);
+  background-size: cover;
+  height: 500px;
+ 
+}
+.tittle{
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+
+.serieprincipal .subtittle{
+  margin-bottom: 5%;
+ 
+}
+
+.botao{
+  background-color: rgba(0, 0, 0, .50);
+  border: none;
+  color: white;
+
+  padding: 15px 80px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;/*cursor maozinha*/
+  transition: 2s ease all; /*transição entre uma e outra*/
+}
+
+.botao:hover{ /*hover evento de passar o mouse por cima*/
+  background-color: white;
+  color: black;
+
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 10px;
+}
+
+.serieprincipal .container{
+  width: 700px;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  
+}
+
+.carrosel-filmes{
+  margin-top: 5px ;
+}
